@@ -15,7 +15,7 @@ const App = () => {
   const [input, setInput] = useState("");
   const [users, setUsers] = useState([]);
 
-  //Function to fetch from our backend and update customers array
+  //Function to fetch from our backend and update customers arra
   function getUser(e) {
     let PK = e.input;
     API.get(myAPI, path, {})
