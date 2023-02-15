@@ -1,0 +1,8 @@
+{
+  "storage": {
+    "fulltestdb": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}
