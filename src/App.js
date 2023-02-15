@@ -14,7 +14,7 @@ const App = () => {
   //Function to fetch from our backend and update customers array
   function getUser(e) {
     let PK = e.input;
-    API.get(myAPI, path + "/" + PK)
+    API.get(myAPI, path)
       .then((response) => {
         console.log(response);
         let newUsers = [...users];
