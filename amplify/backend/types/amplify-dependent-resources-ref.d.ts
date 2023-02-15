@@ -1,5 +1,10 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
+    "fulltest": {
+      "GraphQLAPIEndpointOutput": "string",
+      "GraphQLAPIIdOutput": "string",
+      "GraphQLAPIKeyOutput": "string"
+    },
     "fulltestapi": {
       "ApiId": "string",
       "ApiName": "string",

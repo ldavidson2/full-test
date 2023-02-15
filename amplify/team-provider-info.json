@@ -19,14 +19,15 @@
       "function": {
         "fulltestapifunction": {
           "deploymentBucketName": "amplify-amplify07d4be86a68e4-staging-191348-deployment",
-          "s3Key": "amplify-builds/fulltestapifunction-392b7964525668744c7a-build.zip"
+          "s3Key": "amplify-builds/fulltestapifunction-4c6d7450464870745959-build.zip"
         }
       },
       "auth": {
         "fulltest": {}
       },
       "api": {
-        "fulltestapi": {}
+        "fulltestapi": {},
+        "fulltest": {}
       }
     }
   }
