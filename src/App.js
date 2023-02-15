@@ -3,6 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Message from "./components/message";
 import Amplify, { API } from "aws-amplify";
 import React, { useEffect, useState } from "react";
+import awsconfig from './aws-exports';
+
+Amplify.configure(awsconfig);
+API.configure(awsconfig);
 
 const myAPI = "fulltestapi";
 const path = "/user";
@@ -14,7 +18,7 @@ const App = () => {
   //Function to fetch from our backend and update customers array
   function getUser(e) {
     let PK = e.input;
-    API.get(myAPI, path)
+    API.get(myAPI, path, {})
       .then((response) => {
         console.log(response);
         let newUsers = [...users];
